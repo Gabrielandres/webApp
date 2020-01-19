@@ -1,0 +1,44 @@
+#picture1 {
+   
+ width: 500px; 
+ height: 350px;
+ display: block;
+ margin-left: 415px;
+ 
+ 
+ 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+a.class1 {
+   
+   background-color: #4CAF50;
+   color: white;
+}
+
+.class2 {
+
+ float: left;
+
+}
+
+h1 {text-align: center;}
