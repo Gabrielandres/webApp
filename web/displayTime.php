@@ -8,10 +8,12 @@
 <?php
 
 date_default_timezone_set("America/Boise");
-echo "Today is " . date("Y/m/d") . "<br>";
-echo "Today is " . date("l") . "<br>";
+echo '<span style="font-size: 60px;">Today is ' . date("Y/m/d") . 
+'</span><br>';
+echo '<span style="font-size: 60px;">Today is ' . date("l") . 
+'</span><br>';
 
-echo '<span style="font-size: 40px;">The time is ' . date("h:i:sa") . 
+echo '<span style="font-size: 60px;">The time is ' . date("h:i:sa") . 
 '</span>';
 ?>
 
