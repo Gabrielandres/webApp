@@ -1,7 +1,6 @@
 <?php
-    $username = $_POST['user'];
-	$password = $_POST['pass'];
-	
+
+$db = NULL;	
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -24,12 +23,18 @@ catch (PDOException $ex)
   die();
 }
 
-$result = pg_query("Select * from note_user where username = '$username' and password = '$password'");
-$row = pg_fetch_array($result);
-if ($row['username'] == $username && $row['password'] == $password ){
-    echo "Login Success!! Welcome ".$row['username'];
-}else {
+if (trim($_POST['user']) != '' && trim($_POST['password']) != '')
+{
+	$username = $_POST['user'];
+	$password = $_POST['pass'];
+	$result = $db->prepare("Select * from note_user where username = '$username' and password = '$password'");
+    $result->execute();
+	if($row= $family_members->fetch(PDO::FETCH_ASSOC)){
+          echo "Login Success!! Welcome ";
+    }else {
 	
 	echo "Failed to login!";
+    }
+	
 }
 ?>
