@@ -1,7 +1,7 @@
 <?php
 
 //session_start();
-$username = $_POST['username'];
+$user = $_POST['username'];
 $pass = $_POST['password'];
 
 //require 'lib/password.php';
@@ -12,7 +12,7 @@ if(isset($_POST['register'])){
     
    // $username = !empty($_POST['username']) ? trim($_POST['username']) : null;
    // $pass = !empty($_POST['password']) ? trim($_POST['password']) : null;
-	echo <p>$username $pass</p>;
+	//echo <p>$username $pass</p>;
 	//echo <p>$username $pass</p>;
    
     //$stmt = $db->prepare("SELECT COUNT(username) AS num FROM users WHERE username = :username");
@@ -29,6 +29,7 @@ if(isset($_POST['register'])){
 
 	echo "<p><strong>$username $password</strong></p>";
 }
+echo "<p>$user $pass</p>";
 /*    
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
