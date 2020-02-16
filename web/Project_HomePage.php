@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -7,7 +7,6 @@
     <body>
         <h1>Register</h1>
         <form action="register.php" method="post">
-		    <input type="text" id="username" name="username"><br>
             <label for="username">Username</label>
             <input type="text" id="username" name="username"><br>
             <label for="password">Password</label>
