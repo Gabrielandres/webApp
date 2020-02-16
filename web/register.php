@@ -3,7 +3,7 @@
 session_start();
 
 require 'lib/password.php';
-require "connect.php";
+require ("connect.php");
 $db = get_db();
 
 if(isset($_POST['register'])){
@@ -11,8 +11,7 @@ if(isset($_POST['register'])){
     $username = !empty($_POST['username']) ? trim($_POST['username']) : null;
     $pass = !empty($_POST['password']) ? trim($_POST['password']) : null;
     
-    $sql = "SELECT COUNT(username) AS num FROM users WHERE username = :username";
-    $stmt = $db->prepare($sql);
+    $stmt = $db->prepare("SELECT COUNT(username) AS num FROM users WHERE username = :username");
     
     $stmt->bindValue(':username', $username);
     
@@ -26,8 +25,7 @@ if(isset($_POST['register'])){
 
 $passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
 
-$sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
-    $stmt = $db->prepare($sql);
+    $stmt = $db->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
 
  $stmt->bindValue(':username', $username);
     $stmt->bindValue(':password', $passwordHash);
