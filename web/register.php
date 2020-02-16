@@ -10,7 +10,10 @@ if(isset($_POST['register'])){
     
     $username = !empty($_POST['username']) ? trim($_POST['username']) : null;
     $pass = !empty($_POST['password']) ? trim($_POST['password']) : null;
-    
+	
+	echo $username;
+	echo &pass;
+ /*   
     $stmt = $db->prepare("SELECT COUNT(username) AS num FROM users WHERE username = :username");
     
     $stmt->bindValue(':username', $username);
@@ -35,6 +38,6 @@ $result = $stmt->execute();
     if($result){
         echo 'Thank you for registering with our website.';
     }
-    
+   */ 
 }
 ?>
