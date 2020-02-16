@@ -16,6 +16,7 @@ if(isset($_POST['register'])){
 	
    
  $stmt = $db->prepare("SELECT COUNT(username) AS num FROM users WHERE username = :user");
+/*
  $stmt1 = $db->prepare("SELECT username, password FROM users");
 
     $stmt->bindValue(':username', $user);
@@ -30,7 +31,7 @@ if(isset($_POST['register'])){
 	echo "<p><strong>$username $password</strong></p>";
 }
 //echo "<p>$user $pass</p>";
-    
+*/    
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
      if($row['num'] > 0){
