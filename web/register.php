@@ -1,8 +1,8 @@
 <?php
 
 //session_start();
-$user = $_POST['username'];
-$pass = $_POST['password'];
+//$user = $_POST['username'];
+//$pass = $_POST['password'];
 
 //require 'lib/password.php';
 require "connect.php";
@@ -29,7 +29,7 @@ if(isset($_POST['register'])){
 
 	echo "<p><strong>$username $password</strong></p>";
 }
-echo "<p>$user $pass</p>";
+//echo "<p>$user $pass</p>";
 /*    
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
