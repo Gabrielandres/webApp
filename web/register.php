@@ -15,13 +15,13 @@ if(isset($_POST['register'])){
 	echo "<p>$user $pass</p>";
 	
    
-    //$stmt = $db->prepare("SELECT COUNT(username) AS num FROM users WHERE username = :username");
- $stmt = $db->prepare("SELECT username, password FROM users");
+ $stmt = $db->prepare("SELECT COUNT(username) AS num FROM users WHERE username = :user");
+ $stmt1 = $db->prepare("SELECT username, password FROM users");
 
-    //$stmt->bindValue(':username', $username);
+    $stmt->bindValue(':username', $user);
     
-    $stmt->execute();
-	while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
+    $stmt1->execute();
+	while ($row = $stmt1->fetch(PDO::FETCH_ASSOC))
 {
 	
 	$username = $row['username'];
@@ -30,7 +30,7 @@ if(isset($_POST['register'])){
 	echo "<p><strong>$username $password</strong></p>";
 }
 //echo "<p>$user $pass</p>";
-/*    
+    
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
      if($row['num'] > 0){
@@ -39,16 +39,16 @@ if(isset($_POST['register'])){
 
 $passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
 
-    $stmt = $db->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
+    $stmt = $db->prepare("INSERT INTO users (username, password) VALUES (:user, :pass)");
 
- $stmt->bindValue(':username', $username);
-    $stmt->bindValue(':password', $passwordHash);
+ $stmt->bindValue(':user', $username);
+    $stmt->bindValue(':pass', $passwordHash);
 
 $result = $stmt->execute();
     
     if($result){
         echo 'Thank you for registering with our website.';
     }
-   */ 
+   
 }
 ?>
