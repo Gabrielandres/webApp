@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>MyLDSApp</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-<head>
-<body>
-    <div id="frm">
-	    <form action="login.php" method="POST">
-		    <p>
-			    <label>Username:</label>
-				<input type="text" id="user" name="user" />
-			</p>
-			<p>
-			    <label>Password:</label>
-				<input type="password" id="pass" name="pass" />
-			</p>
-			<p>
-			    <input type="submit" id="btn" value="login" />
-			</p>
-        </form>    
-    </div> 
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form action="register.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password"><br>
+            <input type="submit" name="register" value="Register"></button>
+        </form>
+    </body>
 </html>
