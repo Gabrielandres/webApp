@@ -8,8 +8,8 @@ $db = get_db();
 
 if(isset($_POST['register'])){
     
-    $username = $_POST['username']//!empty($_POST['username']) ? trim($_POST['username']) : null;
-    $pass = $_POST['password']//!empty($_POST['password']) ? trim($_POST['password']) : null;
+    $username = $_POST['username'];//!empty($_POST['username']) ? trim($_POST['username']) : null;
+    $pass = $_POST['password'];//!empty($_POST['password']) ? trim($_POST['password']) : null;
 	
 	echo <p>$username $pass</p>;
    
