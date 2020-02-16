@@ -6,11 +6,13 @@
     </head>
     <body>
         <h1>Register</h1>
-        <form action="register.php" method="post">
+        <form id= action="register.php" method="POST">
+		    <input type="text" id="username" name="username"></input>
             <label for="username">Username</label>
-            <input type="text" id="username" name="username"><br>
+			<br /><br />
+            <input type="text" id="password" name="password"></input>
             <label for="password">Password</label>
-            <input type="text" id="password" name="password"><br>
+			<br /><br />
             <input type="submit" name="register" value="Register"></button>
         </form>
     </body>
