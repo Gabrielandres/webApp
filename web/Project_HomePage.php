@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
         <title>Register</title>
-		<link rel="stylesheet" type="text/css" href="proStyle.css">
+		<link rel="stylesheet" type="text/css" href="proStyle.css" />
     </head>
     <body>
         <h1>Register</h1>
