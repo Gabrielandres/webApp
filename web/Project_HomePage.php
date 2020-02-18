@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Register</title>
+		<link rel="stylesheet" href="proStyle.css">
     </head>
-    <body background= "ProBackgroundPic#1.jpg">
+    <body>
         <h1>Register</h1>
         <form action="register.php" method="post">
             <label for="username">Username</label>
