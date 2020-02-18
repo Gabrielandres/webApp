@@ -1,6 +1,6 @@
 <?php
 
-//session_start();
+session_start();
 
 //require 'lib/password.php';
 
@@ -11,8 +11,8 @@ if(isset($_POST['login'])){
 	
 	$username = !empty($_POST['username']) ? trim($_POST['username']) : null;
     $passwordAttempt = !empty($_POST['password']) ? trim($_POST['password']) : null;
-	
-echo "<p>$user $pass</p>";	
+/*	
+echo "<p>$username $passwordAttempt</p>";	
 	
 $stmt = $db->prepare("SELECT username, password FROM users");
 
@@ -27,7 +27,7 @@ $stmt = $db->prepare("SELECT username, password FROM users");
 
 	echo "<p><strong>$username $password</strong></p>";
 }	
-/*
+*/
     $stmt = $db->prepare("SELECT id, username, password FROM users WHERE username = :username");
     $stmt->bindValue(':username', $username);
     $stmt->execute();
@@ -52,6 +52,6 @@ $stmt = $db->prepare("SELECT username, password FROM users");
             die('Incorrect username / password combination!');
         }
     }
-	*/
+	
 }	
 ?>
