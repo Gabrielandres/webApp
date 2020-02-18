@@ -16,7 +16,7 @@ if(isset($_POST['login'])){
     $stmt->bindValue(':username', $username);
     $stmt->execute();
 	$user = $stmt->fetch(PDO::FETCH_ASSOC);
-	
+/*	
 	if($user === false){
      
         die('Incorrect username / password combination!');
@@ -36,4 +36,5 @@ if(isset($_POST['login'])){
             die('Incorrect username / password combination!');
         }
     }
+	*/
 ?>
