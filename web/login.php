@@ -45,7 +45,7 @@ $stmt = $db->prepare("SELECT username, password FROM users");
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['logged_in'] = time();
            
-            header('Location: Project_HomePage.php');
+            header('Location: home.php');
             exit;
             
         } else{
