@@ -2,7 +2,7 @@
 
 session_start();
 
-require 'lib/password.php';
+//require 'lib/password.php';
 
 require "connect.php";
 $db = get_db();
@@ -29,7 +29,7 @@ if(isset($_POST['login'])){
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['logged_in'] = time();
            
-            header('Location: home.php');
+            header('Location: Project_HomePage.php');
             exit;
             
         } else{
