@@ -13,7 +13,7 @@ if(isset($_POST['login'])){
     $passwordAttempt = !empty($_POST['password']) ? trim($_POST['password']) : null;
 	
 echo "<p>$user $pass</p>";	
-/*	
+	
 $stmt = $db->prepare("SELECT username, password FROM users");
 
     $stmt->bindValue(':username', $username);
@@ -27,7 +27,7 @@ $stmt = $db->prepare("SELECT username, password FROM users");
 
 	echo "<p><strong>$username $password</strong></p>";
 }	
-
+/*
     $stmt = $db->prepare("SELECT id, username, password FROM users WHERE username = :username");
     $stmt->bindValue(':username', $username);
     $stmt->execute();
@@ -53,4 +53,5 @@ $stmt = $db->prepare("SELECT username, password FROM users");
         }
     }
 	*/
+}	
 ?>
