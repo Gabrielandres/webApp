@@ -4,7 +4,7 @@
 //$user = $_POST['username'];
 //$pass = $_POST['password'];
 
-require 'lib/password.php';
+//require 'lib/password.php';
 require "connect.php";
 $db = get_db();
 
