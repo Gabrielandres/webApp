@@ -1,10 +1,10 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Register</title>
     </head>
-    <body>
+    <body background= "ProBackgroundPic#1.jpg">
         <h1>Register</h1>
         <form action="register.php" method="post">
             <label for="username">Username</label>

@@ -14,8 +14,11 @@ if(isset($_POST['register'])){
    $pass = !empty($_POST['password']) ? trim($_POST['password']) : null;
 	echo "<p>$user $pass</p>";
 	
-   
+ 
  $stmt = $db->prepare("SELECT COUNT(username) AS num FROM users WHERE username = :username");
+ //$stmt = $db->prepare("SELECT * FROM users WHERE username = '$username'");
+ $stmt->bindValue(':username', $username);
+ $stmt->execute();
 /*
  $stmt1 = $db->prepare("SELECT username, password FROM users");
 
@@ -30,14 +33,20 @@ if(isset($_POST['register'])){
 
 	echo "<p><strong>$username $password</strong></p>";
 }
-//echo "<p>$user $pass</p>";
 */    
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-     if($row['num'] > 0){
+	if($row['num'] > 0){
         die('That username already exists!');
     }
-
+/*
+     if($row){
+		 if ($row['username'] === $username){
+			 
+			die('That username already exists!'); 
+		 }
+        //die('That username already exists!');
+    }
+*/
 $passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
 
     $stmt = $db->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
