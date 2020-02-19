@@ -14,10 +14,12 @@
 			
 			<div class="info">   
                <label for="username"><b>Username</b></label>
-               <input type="text" placeholder="Enter Username" id="username" name="username" required>
+               <input type="text" placeholder="Enter Username" id="username" name="username" required><br>
                <label for="password"><b>Password</b></label>
-               <input type="text" placeholder="Enter Password" id="password" name="password" required>
-               <button type="submit" name="login" value="Login">Login</button>
+               <input type="text" placeholder="Enter Password" id="password" name="password" required><br>
+			</div>
+			<div class="info2">
+               <button type="submit" name="login" value="Login">Login</button><br>
 			   <label>
 			      <input type="checkbox" checked="checked" name="remember">Remember me
 			   </label>
