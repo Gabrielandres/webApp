@@ -24,7 +24,7 @@
 			</div>
 			
             <div class="container" style="background-color:#f1f1f1">
-            <p><a href="createAccount.php">Create an account</a></p>
+            <button type="button" class="createAcc" href="createAccount.php">Create an account</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
 			
