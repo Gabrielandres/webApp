@@ -1,10 +1,6 @@
 <?php
 
-//session_start();
-//$user = $_POST['username'];
-//$pass = $_POST['password'];
 
-//require 'lib/password.php';
 require "connect.php";
 $db = get_db();
 
@@ -16,37 +12,15 @@ if(isset($_POST['register'])){
 	
  
  $stmt = $db->prepare("SELECT COUNT(username) AS num FROM users WHERE username = :username");
- //$stmt = $db->prepare("SELECT * FROM users WHERE username = '$username'");
+ 
  $stmt->bindValue(':username', $username);
  $stmt->execute();
-/*
- $stmt1 = $db->prepare("SELECT username, password FROM users");
 
-    $stmt->bindValue(':username', $username);
-    
-    $stmt1->execute();
-	while ($row = $stmt1->fetch(PDO::FETCH_ASSOC))
-{
-	
-	$username = $row['username'];
-	$password = $row['password'];
-
-	echo "<p><strong>$username $password</strong></p>";
-}
-*/    
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 	if($row['num'] > 0){
         die('That username already exists!');
     }
-/*
-     if($row){
-		 if ($row['username'] === $username){
-			 
-			die('That username already exists!'); 
-		 }
-        //die('That username already exists!');
-    }
-*/
+
 $passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
 
     $stmt = $db->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
@@ -62,3 +36,13 @@ $result = $stmt->execute();
    
 }
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YourLDSHelp.com</title>
+		<link rel="stylesheet" type="text/css" href="proStyle.css" />
+    </head>
+    <body>
+       
+    </body>
+</html>

@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="proStyle.css" />
     </head>
     <body>
-        <h1>Register</h1>
+        <h2>Register</h2>
         <form action="register.php" method="post">
             <label for="username">Username</label>
             <input type="text" id="username" name="username"><br>
