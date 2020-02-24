@@ -6,7 +6,7 @@
     </head>
     <body>
         <h2>User Register Form</h2>
-        <form action="register.php" method="post">
+        <form action="saveRegisterForm.php" method="post">
 		  <div class="info">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName"><br>
