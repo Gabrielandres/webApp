@@ -26,7 +26,7 @@
             <input type="text" id="email" name="email"><br>
 		  </div>
 		  <div class="info2">	
-            <input type="submit" name="registerForm" value="registerForm"></button>
+            <button type="submit" name="registerForm" value="registerForm"></button>
 		  </div>
         </form>
     </body>
