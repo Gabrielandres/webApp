@@ -8,7 +8,6 @@ if(isset($_POST['register'])){
     
    $username = !empty($_POST['username']) ? trim($_POST['username']) : null;
    $pass = !empty($_POST['password']) ? trim($_POST['password']) : null;
-	echo "<p>$user $pass</p>";
 	
  
  $stmt = $db->prepare("SELECT COUNT(username) AS num FROM users WHERE username = :username");
