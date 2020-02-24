@@ -5,8 +5,9 @@
 		<link rel="stylesheet" type="text/css" href="proStyle.css" />
     </head>
     <body>
-        <h2>User Resgister Form</h2>
+        <h2>User Register Form</h2>
         <form action="register.php" method="post">
+		  <div class="info">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName"><br>
             <label for="lastName">Last Name:</label>
@@ -23,8 +24,10 @@
             <input type="text" id="phone" name="phone"><br>
 			<label for="email">Email:</label>
             <input type="text" id="email" name="email"><br>
-			
+		  </div>
+		  <div class="info2">	
             <input type="submit" name="registerForm" value="registerForm"></button>
+		  </div>
         </form>
     </body>
 </html>

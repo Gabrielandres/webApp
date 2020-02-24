@@ -7,7 +7,6 @@ if(isset($_POST['registerForm'])){
 	
 	
             header('Location: createAccount.php');
-            exit;
 	
 }	
 ?>

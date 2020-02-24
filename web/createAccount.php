@@ -11,8 +11,6 @@
             <input type="text" id="username" name="username"><br>
             <label for="password">Password</label>
             <input type="text" id="password" name="password"><br>
-			 <label for="username">Username</label>
-            <input type="text" id="username" name="username"><br>
             <input type="submit" name="register" value="Register"></button>
         </form>
     </body>
