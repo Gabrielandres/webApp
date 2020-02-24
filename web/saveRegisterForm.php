@@ -5,9 +5,9 @@ $db = get_db();
 
 if(isset($_POST['registerForm'])){
 	
-	
-            header('Location: createAccount.php');
-	
+	if($_POST['registerForm']){
+        header('Location: createAccount.php');
+	}
 }	
 ?>
 <!DOCTYPE html>
