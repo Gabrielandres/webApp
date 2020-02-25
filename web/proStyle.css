@@ -16,6 +16,7 @@ label{
     clear: left;
     width: 250px;
     text-align: right;
+	padding-left: 470px;
 }
 
 input[type=text], input[type=password] {
