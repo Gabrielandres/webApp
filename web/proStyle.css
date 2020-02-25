@@ -16,20 +16,18 @@ label{
     clear: left;
     width: 250px;
     text-align: right;
-	padding-left: 470px;
 }
 
 input[type=text], input[type=password] {
-	display: inline-block;
-    float: left;
-/*
+
+  float: left;
   width: 30%;
   padding: 12px 12px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  */
+  
 }
 
 button {
@@ -65,12 +63,12 @@ img.logo {
   width: 25%;
   border-radius: 25%;
 }
-/*
+
 .info {
 	
 	padding-left: 470px; 
 }
-*/
+
 .info2 {
 	
 	padding-left: 650px; 

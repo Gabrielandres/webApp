@@ -7,7 +7,7 @@
     <body>
         <h2>User Register Form</h2>
         <form action="saveRegisterForm.php" method="post">
-		  <!--<div class="info">-->
+		  <div class="info">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName"><br>
             <label for="lastName">Last Name:</label>
@@ -24,7 +24,7 @@
             <input type="text" id="phone" name="phone"><br>
 			<label for="email">Email:</label>
             <input type="text" id="email" name="email"><br>
-		  <!--</div>-->
+		  </div>
 		  <div class="info2">	
             <button type="submit" name="registerForm" value="registerForm">Submit</button>
 		  </div>
