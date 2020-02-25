@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="proStyle.css" />
     </head>
     <body>
-        <h2>Login Form</h2>
+        <h2>Login To Your Account</h2>
         <form action="login.php" method="post">
 		
 		    <div class="img">
