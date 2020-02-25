@@ -9,11 +9,7 @@
         <form action="saveRegisterForm.php" method="post">
 		  <div class="info">
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName">
-            <span class="error">*
-			<?php include 'saveRegisterForm.php'; echo $nameErr;?>
-			</span><br>
-			<!--
+            <input type="text" id="firstName" name="firstName"><br>
             <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="lastName"><br>
 			<label for="address">Address:</label>
