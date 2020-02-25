@@ -9,7 +9,11 @@
         <form action="saveRegisterForm.php" method="post">
 		  <div class="info">
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName"><br>
+            <input type="text" id="firstName" name="firstName">
+            <span class="error">*
+			<?php include 'saveRegisterForm.php'; echo $nameErr;?>
+			</span><br>
+			<!--
             <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="lastName"><br>
 			<label for="address">Address:</label>
@@ -23,7 +27,7 @@
 			<label for="phone">Phone:</label>
             <input type="text" id="phone" name="phone"><br>
 			<label for="email">Email:</label>
-            <input type="text" id="email" name="email"><br>
+            <input type="text" id="email" name="email"><br>-->
 		  </div>
 		  <div class="info2">	
             <button type="submit" name="registerForm" value="registerForm"></button>
