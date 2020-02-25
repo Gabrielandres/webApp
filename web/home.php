@@ -10,7 +10,7 @@
 	<h2>A dropdown menu is provided so that you can select the material 
 	in our database relevant to your insterests!!</h2>
 	<div class="dropdown">
-       <button class="dropbtn">Database</button>
+       <button class="dropbtn">Database Content</button>
        <div class="dropdown-content">
           <a href="#">Scriptures</a>
           <a href="#">General Conferences Talks</a>
