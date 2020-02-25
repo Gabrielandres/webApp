@@ -9,13 +9,13 @@ if(isset($_POST['registerForm'])){
 	
 	if (empty($_POST["name"])) {
        $nameErr = "Name is required";
-  } else {
+  }/* else {
    $firstName = !empty($_POST['firstName']) ? trim($_POST['firstName']) : null;
 
   }
 	
 	//$firstName = !empty($_POST['firstName']) ? trim($_POST['firstName']) : null;
-    /*
+    
 	$lastName = !empty($_POST['lastName']) ? trim($_POST['lastName']) : null;
 	$address = !empty($_POST['address']) ? trim($_POST['address']) : null;
 	$city = !empty($_POST['city']) ? trim($_POST['city']) : null;
@@ -25,9 +25,9 @@ if(isset($_POST['registerForm'])){
 	$email = !empty($_POST['email']) ? trim($_POST['email']) : null;
 	*/
 	//$stmt = $db->prepare("INSERT INTO user_information (firstName, lastName, address, city, state, zip, phone, email) VALUES (:firstName, :lastName, :address, :city, :state, :zip, :phone, :email)");
-    $stmt = $db->prepare("INSERT INTO user_information (firstName) VALUES (:firstName)");
+   // $stmt = $db->prepare("INSERT INTO user_information (firstName) VALUES (:firstName)");
 
-	$stmt->bindValue(':firstName', $firstName);
+	//$stmt->bindValue(':firstName', $firstName);
 	/*
 	$stmt->bindValue(':lastName', $lastName);
 	$stmt->bindValue(':address', $address);
@@ -36,13 +36,13 @@ if(isset($_POST['registerForm'])){
 	$stmt->bindValue(':zip', $zip);
 	$stmt->bindValue(':phone', $phone);
 	$stmt->bindValue(':email', $email);
-	*/
+	
 	$result = $stmt->execute();
 	
 	if($result){
         header('Location: createAccount.php');
     }
-        
+    */    
 }	
 ?>
 <!DOCTYPE html>
