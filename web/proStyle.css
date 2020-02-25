@@ -10,17 +10,14 @@ form {
 	
 }
 
-
 input[type=text], input[type=password] {
 
-  float: left;
   width: 30%;
   padding: 12px 12px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  
 }
 
 button {
@@ -61,7 +58,6 @@ img.logo {
 	
 	padding-left: 470px; 
 }
-
 .info2 {
 	
 	padding-left: 650px; 
