@@ -5,16 +5,8 @@
 		<link rel="stylesheet" type="text/css" href="proStyle.css" />
     </head>
     <body>
-	<?php
-	if(/*isset($_POST['registerForm']*/$_SERVER["REQUEST_METHOD"] == "POST"){
-	
-	if (empty($_POST["name"])) {
-       $nameErr = "Name is required";
-     } 
-  ?>
         <h2>User Register Form</h2>
-        <!--<form action="saveRegisterForm.php" method="post">-->
-		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <form action="saveRegisterForm.php" method="post">
 		  <div class="info">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName">

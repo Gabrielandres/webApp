@@ -5,9 +5,9 @@ $db = get_db();
 
 $nameErr = "";
 
-if(/*isset($_POST['registerForm']*/$_SERVER["REQUEST_METHOD"] == "POST"){
+if(isset($_POST['registerForm'])){
 	
-	if (empty($_POST["name"])) {
+	if (empty($_POST["firstName"])) {
        $nameErr = "Name is required";
   }/* else {
    $firstName = !empty($_POST['firstName']) ? trim($_POST['firstName']) : null;
