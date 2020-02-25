@@ -12,11 +12,11 @@
 	<div class="dropdown">
        <button class="dropbtn">Database Content</button>
        <div class="dropdown-content">
-          <a href="#">Scriptures</a>
-          <a href="#">General Conferences Talks</a>
-          <a href="#">Ensign Articles</a>
-		  <a href="#">Hymns</a>
-		  <a href="#">Lds Manuals</a>
+          <a href="scriptures.php">Scriptures</a>
+          <a href="generalConference.php">General Conferences Talks</a>
+          <a href="ensignArt.php">Ensign Articles</a>
+		  <a href="hymns.php">Hymns</a>
+		  <a href="ldsManual.php">Lds Manuals</a>
         </div>
      </div>
 	

@@ -9,12 +9,12 @@
         <form action="register.php" method="post">
 		<div class="info">
             <label for="username">Username</label>
-            <input type="text" id="username" name="username"><br>
+            <input type="text" id="username" name="username" required><br>
             <label for="password">Password</label>
-            <input type="text" id="password" name="password"><br>
+            <input type="text" id="password" name="password" required><br>
 		</div>
 		<div class="info2">
-            <input type="submit" name="register" value="Register"></button>
+            <button type="submit" name="register" value="Register">Save</button>
 		</div>
 			
         </form>
