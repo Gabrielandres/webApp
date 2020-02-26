@@ -27,7 +27,8 @@
       $verse = $fRow["verse"];
 	  $link = $fRow["link"];
 
-      echo "<p>$book $chapter ':' $verse</p>". $link;
+      echo "<p>$book $chapter ':' $verse</p>";
+	  echo '<a href='.$link.'>'.$link.'</a>';
    }
 	
 	
