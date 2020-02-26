@@ -48,3 +48,39 @@ INSERT INTO scriptures ( book,
                          '3',
                          '7',
                          'https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng');
+
+INSERT INTO scriptures ( book,
+                         chapter, 
+                         verse,
+                         link) 
+                VALUES ( 'Moses',
+                         '1',
+                         '39',
+                         'https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/1.39?lang=eng#p39');
+
+INSERT INTO scriptures ( book,
+                         chapter, 
+                         verse,
+                         link) 
+                VALUES ( 'Moses',
+                         '1',
+                         '39',
+                         'https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/1.39?lang=eng#p39');
+INSERT INTO scriptures ( book,
+                         chapter, 
+                         verse,
+                         link) 
+                VALUES ( 'Matthew',
+                         '11',
+                         '28',
+                         'https://www.churchofjesuschrist.org/study/scriptures/nt/matt/11.28-30?lang=eng#p28');
+
+INSERT INTO scriptures ( book,
+                         chapter, 
+                         verse,
+                         link) 
+                VALUES ( 'D&C',
+                         '6',
+                         '36',
+                         'https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6.36?lang=eng#p36');
+						 
