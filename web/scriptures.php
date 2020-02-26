@@ -6,14 +6,6 @@
     </head>
     <body>
 	<?php
-	$linkvar='http://www.google.com';
-	
-	echo '<a href='.$linkvar.'>'.$linkvar.'</a>';
-	
-	?>
-	<br>
-	<br>
-	<?php
 	require "connect.php";
     $db = get_db();
 	
@@ -27,7 +19,8 @@
       $verse = $fRow["verse"];
 	  $link = $fRow["link"];
 
-      echo "<p>$book $chapter: $verse</p>" . '<a href='.$link.'>'.$link.'</a>';
+      echo "<p>$book $chapter: $verse</p>";
+	  echo '<a href='.$link.'>'.$link.'</a><br>';
    }
 	
 	
