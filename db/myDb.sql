@@ -1,8 +1,8 @@
 # I won't create any Database because it is supposed I already created one with heroku.
 
-CREATE TABLE login_credentials
+CREATE TABLE users
 (
-	user_id SERIAL NOT NULL PRIMARY KEY,
+	id SERIAL NOT NULL PRIMARY KEY,
 	username VARCHAR(50) NOT NULL UNIQUE,
 	password VARCHAR(50) NOT NULL
 
@@ -32,3 +32,19 @@ CREATE TABLE membership
 	updated_date DATE NOT NULL
 
 );
+
+CREATE TABLE scriptures
+( id SERIAL NOT NULL PRIMARY KEY,
+  book VARCHAR(100) NOT NULL,
+  chapter INTEGER NOT NULL,
+  verse INTEGER NOT NULL,
+  link VARCHAR(100) NOT NULL);
+  
+INSERT INTO scriptures ( book,
+                         chapter, 
+                         verse,
+                         link) 
+                VALUES ( '1 Nephi',
+                         '3',
+                         '7',
+                         'https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng');
