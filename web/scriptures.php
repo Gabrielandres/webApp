@@ -17,7 +17,7 @@
 	require "connect.php";
     $db = get_db();
 	
-	$scripture = $db->prepare("SELECT * FROM scripture");
+	$scripture = $db->prepare("SELECT * FROM scriptures");
     $scripture->execute();
 	
 	while ($fRow = $scripture->fetch(PDO::FETCH_ASSOC))
