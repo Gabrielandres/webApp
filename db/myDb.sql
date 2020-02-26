@@ -51,10 +51,10 @@ INSERT INTO scriptures ( book,
                          chapter, 
                          verse,
                          link) 
-                VALUES ( 'Moses',
-                         '1',
-                         '39',
-                         'https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/1.39?lang=eng#p39');
+                VALUES ( '2 Nephi',
+                         '2',
+                         '25',
+                         'https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2.25?lang=eng#p25');
 INSERT INTO scriptures ( book,
                          chapter, 
                          verse,
