@@ -16,7 +16,7 @@
           <a href="generalConference.php">General Conferences Talks</a>
           <a href="ensignArt.php">Ensign Articles</a>
 		  <a href="hymns.php">Hymns</a>
-		  <a href="ldsManual.php">Lds Manuals</a>
+		  <a href="ldsManuals.php">Lds Manuals</a>
         </div>
      </div>
 	
