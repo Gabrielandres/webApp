@@ -72,4 +72,57 @@ INSERT INTO scriptures ( book,
                          '6',
                          '36',
                          'https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6.36?lang=eng#p36');
+
+
+CREATE TABLE generalCon
+( id SERIAL NOT NULL PRIMARY KEY,
+  author VARCHAR(100) NOT NULL,
+  topicName VARCHAR(100) NOT NULL,
+  year INTEGER NOT NULL,
+  link VARCHAR(100) NOT NULL);
+
+INSERT INTO generalCon ( author,
+                         topicName, 
+                         year,
+                         link) 
+                VALUES ( 'Elder Ulisses Soares',
+                         'How Can I Understand?',
+                         '2019',
+                         'https://www.churchofjesuschrist.org/study/general-conference/2019/04/11soares?lang=eng');	
+
+INSERT INTO generalCon ( author,
+                         topicName, 
+                         year,
+                         link) 
+                VALUES ( 'President M. Russell Ballard',
+                         'The True, Pure, and Simple Gospel of Jesus Christ',
+                         '2019',
+                         'https://www.churchofjesuschrist.org/study/general-conference/2019/04/23ballard?lang=eng');	
+
+INSERT INTO generalCon ( author,
+                         topicName, 
+                         year,
+                         link) 
+                VALUES ( 'Elder Neil L. Andersen',
+                         'The Eye of Faith',
+                         '2019',
+                         'https://www.churchofjesuschrist.org/study/general-conference/2019/04/25andersen?lang=eng');	
+
+INSERT INTO generalCon ( author,
+                         topicName, 
+                         year,
+                         link) 
+                VALUES ( 'Elder Jeffrey R. Holland',
+                         'Behold the Lamb of God',
+                         '2019',
+                         'https://www.churchofjesuschrist.org/study/general-conference/2019/04/28holland?lang=eng');	
+
+INSERT INTO generalCon ( author,
+                         topicName, 
+                         year,
+                         link) 
+                VALUES ( 'President Henry B. Eyring',
+                         'The Power of Sustaining Faith',
+                         '2019',
+                         'https://www.churchofjesuschrist.org/study/general-conference/2019/04/34eyring?lang=eng');							 
 						 
