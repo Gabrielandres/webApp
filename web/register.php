@@ -42,6 +42,8 @@ $result = $stmt->execute();
 		<link rel="stylesheet" type="text/css" href="proStyle.css" />
     </head>
     <body>
+	
+	<a href="Project_HomePage.php">Go back to login page</a>
        
     </body>
 </html>
