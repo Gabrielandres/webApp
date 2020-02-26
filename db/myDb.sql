@@ -22,17 +22,6 @@ CREATE TABLE user_information
 
 );
 
-CREATE TABLE membership
-(
-	id SERIAL NOT NULL PRIMARY KEY,
-	userInformation_id INTEGER NOT NULL,
-	loginCredentials_id INTEGER NOT NULL,
-	membershipNumber_id INTEGER NOT NULL,
-	create_date DATE NOT NULL,
-	updated_date DATE NOT NULL
-
-);
-
 CREATE TABLE scriptures
 ( id SERIAL NOT NULL PRIMARY KEY,
   book VARCHAR(100) NOT NULL,
