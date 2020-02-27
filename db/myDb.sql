@@ -125,4 +125,58 @@ INSERT INTO generalCon ( author,
                          'The Power of Sustaining Faith',
                          '2019',
                          'https://www.churchofjesuschrist.org/study/general-conference/2019/04/34eyring?lang=eng');							 
+
+CREATE TABLE ensignArti
+( id SERIAL NOT NULL PRIMARY KEY,
+  author VARCHAR(100) NOT NULL,
+  topicName VARCHAR(100) NOT NULL,
+  year INTEGER NOT NULL,
+  link VARCHAR(200) NOT NULL);
+
+
+INSERT INTO ensignArti ( author,
+                         topicName, 
+                         year,
+                         link) 
+                VALUES ( 'Sister Sharon Eubank',
+                         'The Blessings of Church Membership',
+                         '2020',
+                         'https://www.churchofjesuschrist.org/study/ensign/2020/03/the-blessings-of-church-membership?lang=eng');
+
+INSERT INTO ensignArti ( author,
+                         topicName, 
+                         year,
+                         link) 
+                VALUES ( 'President Thomas S. Monson,',
+                         'The Word of Wisdom',
+                         '2017',
+                         'https://www.churchofjesuschrist.org/study/ensign/2017/02/october-2016-conference-notebook/the-word-of-wisdom?lang=eng');	
+
+INSERT INTO ensignArti ( author,
+                         topicName, 
+                         year,
+                         link) 
+                VALUES ( 'President Russell M. Nelson',
+                         'A Message of Gratitude and a Promise for the Women of the Church in 2019',
+                         '2019',
+                         'https://www.churchofjesuschrist.org/study/ensign/2019/02/a-message-of-gratitude-and-a-promise-for-the-women-of-the-church-in-2019?lang=eng');	
+
+INSERT INTO ensignArti ( author,
+                         topicName, 
+                         year,
+                         link) 
+                VALUES ( 'President Thomas S. Monson',
+                         'The Gift of Repentance',
+                         '2018',
+                         'https://www.churchofjesuschrist.org/study/ensign/2018/01/the-gift-of-repentance?lang=eng');	
+
+INSERT INTO ensignArti ( author,
+                         topicName, 
+                         year,
+                         link) 
+                VALUES ( 'Elder Quentin L. Cook',
+                         'Honoring the Sabbath',
+                         '2016',
+                         'https://www.churchofjesuschrist.org/study/ensign/2016/02/october-2015-conference-notebook/honoring-the-sabbath?lang=eng');							 
+
 						 
